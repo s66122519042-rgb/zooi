@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Zoo Visitor Statistics API",
+    "description": "Request the fiscal year 2569 zoo visitor dataset from the local FastAPI server.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Zoo visitors",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "application/json" }],
+        "url": {
+          "raw": "{{baseUrl}}/api/zoo-visitors",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "zoo-visitors"]
+        }
+      }
+    }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://127.0.0.1:8000" }]
+}
